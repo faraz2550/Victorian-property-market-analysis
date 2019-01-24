@@ -1,0 +1,60 @@
+# Victoria property market Exploration
+
+## Dataset
+
+The data consists of over 800000 rows initially and over 700000 rows after cleaning.
+It is scraped manually by myself using Beautiful Soup package from realestate.com.au
+website. It has the basic information of every sold property in the life time of the
+website. Since the number of sold properties across Australia was too large to scrape
+I only scraped the properties in the state of Victoria.
+The dataset consists of address, real estate agent and agency, number of bedrooms, bathrooms
+and car parks, price, the date it was sold and the suburb where it belongs.
+Many rows don't have a price or the number of bedrooms, etc. Therefor for each
+analysis as needed I filtered the data.
+
+
+## Summary of Findings
+
+My goal was to find useful insights from the dataset that can help someone looking
+to buy a property.
+There are over a dozen different property types in the dataset, most of them not
+very common, houses are the majority of property types and my main focus was the
+4 major residential property types House, Townhouse, Unit and Apartment.
+There is a price gap in the price distribution chart between 700000 and 800000
+which is due to government tax cuts.
+Some real estate agencies have multiple branches in different suburbs Therefor
+they have a large share of the market, major agencies are Ray White and Barry Plant.
+Looking at the median price based on the month, we realize that January have the
+lowest median price throughout the year.
+In general Townhouses have the highest median price between all residential property
+types.
+I had a look at the suburbs to see which ones are best based on growth. To calculate
+and compare growth I calculated the average price increase each year in each suburb and
+gave more weight to recent years to neutralize rapid growth 10 years ago compared to last
+year and make recent growth more effective. I compared 4 property types to each other and
+then compared them based on the property type and plotted to top 4 suburbs for each
+property type.
+I made a separate dataset of median price for each agency in each suburb for each property
+type and in 2, 3 and 4 bedroom categories. Narrowing down the dataset caused the subsets
+to be too small and not really practical for analysis.
+
+## Key Insights for Presentation
+
+I started by asking major question that any property investor has, when to buy,
+what to buy and where to buy.
+I gave a general idea of property types and showcased why I chose the 4
+residential property types for analysis.
+Then I showcased to abnormality in the price distribution as I see it a significant
+finding in the dataset.
+Next I started answering the main questions starting with What type of property
+has had the best growth. Houses and Townhouses are promising in this category.
+The I plotted the bar chart for median and average property prices based on the
+month of the year where it was obvious that January is the time to buy.
+I plotted the line chart for median price of all 4 property types in the same
+chart for the last 10 years to visualize a sensible comparison between the 4
+property types and their behavior throughout the years. To better show case the trend
+I also categorized the property types into 3 subsets, 2 ,3 and 4 bedroom properties. This
+way we'll have a better comparison between them and based on these charts in my opinion
+2 and 4 bedroom Townhouses have had a better growth compared to other types and sizes.
+As a conclusion based on all the charts, buying a 2 bedroom townhouse in Kew in January
+would be a good investment decision.
